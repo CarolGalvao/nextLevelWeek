@@ -1,12 +1,12 @@
 import React from 'react';
 import './assets/styles/global.css';
-import Landing from './pages/Landing'
+import Routes from './pages/routes';
 
 //Nome do componente sempre começa com letra maiuscula
 //JSD = javaScript + XML
 function App() {
   return (
-    <Landing />
+    <Routes />
   );
 }
 
