@@ -60,7 +60,7 @@ export default class classController {
             });
         
             const class_id = insertedClassesIds[0];
-        
+
             const classSchedule = schedule.map((scheduleItem: ScheduleItem) => {
                 return{
                     class_id,
@@ -71,9 +71,9 @@ export default class classController {
             });
         
             await trx('class_schedule').insert(classSchedule);
-        
+
             await trx.commit();
-    
+            
             return response.status(201).send();
     
         } catch(err){
